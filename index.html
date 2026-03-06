@@ -346,8 +346,15 @@
                 status: "Active",
                 desc: "Our main project focused on building and organizing Haru Team web experiences.",
                 stack: ["React", "Tailwind CSS", "JavaScript"],
-                link: "https://github.com/UDTudtXD",
                 haru_link: "https://github.com/UDTudtXD/haruteam"
+            },
+            {
+                id: 2,
+                name: "Project Kura",
+                status: "Under Development",
+                desc: "A new Haru Team project currently being built and tested.",
+                note: "This project is under development.",
+                stack: ["Planning", "Design", "Prototype"]
             }
         ];
 
@@ -609,6 +616,12 @@
                                     </span>
                                 </div>
                                 <p className="text-[var(--text-secondary)]">{product.desc}</p>
+                                {product.note && (
+                                    <p className="text-sm font-semibold text-[var(--highlight)]">
+                                        <i className="fas fa-hourglass-half mr-2"></i>
+                                        {product.note}
+                                    </p>
+                                )}
                                 <div className="flex gap-3 flex-wrap">
                                     {product.stack.map((item) => (
                                         <span key={item} className="px-3 py-1 rounded-full border border-[var(--accent)] text-sm text-[var(--text-secondary)]">
@@ -616,15 +629,17 @@
                                         </span>
                                     ))}
                                 </div>
-                                <a
-                                    href={product.haru_link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="mt-2 inline-flex items-center gap-2 font-bold text-[var(--highlight)] hover:text-white transition-colors"
-                                >
-                                    <i className="fab fa-github"></i>
-                                    View project
-                                </a>
+                                {(product.haru_link || product.link) && (
+                                    <a
+                                        href={product.haru_link || product.link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="mt-2 inline-flex items-center gap-2 font-bold text-[var(--highlight)] hover:text-white transition-colors"
+                                    >
+                                        <i className="fab fa-github"></i>
+                                        View project
+                                    </a>
+                                )}
                             </div>
                         </FadeIn>
                     ))}
@@ -768,4 +783,3 @@
     </script>
 </body>
 </html>
-
