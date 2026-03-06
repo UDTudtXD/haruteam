@@ -339,6 +339,17 @@
             { id: 3, title: "Team Culture", icon: "fa-wand-magic-sparkles", desc: "Move fast. Break things. Blame the intern. Vibe code." },
         ];
 
+        const PRODUCTS = [
+            {
+                id: 1,
+                name: "Haru Index",
+                status: "Active",
+                desc: "Our main project focused on building and organizing Haru Team web experiences.",
+                stack: ["React", "Tailwind CSS", "JavaScript"],
+                link: "https://github.com/UDTudtXD"
+            }
+        ];
+
         // --- Components ---
 
         // Custom Cursor Component
@@ -442,6 +453,7 @@
                         <button onClick={() => handleNav('home')} className="nav-link">Home</button>
                         <button onClick={() => handleNav('team')} className="nav-link">Team</button>
                         <button onClick={() => handleNav('services')} className="nav-link">Services</button>
+                        <button onClick={() => handleNav('product')} className="nav-link">Product</button>
                         <button onClick={() => handleNav('contact')} className="nav-link">Contact</button>
                     </div>
                 </>
@@ -483,6 +495,12 @@
                             className="px-8 py-4 border-2 border-[var(--text-secondary)] text-[var(--text-primary)] font-bold rounded-full hover:bg-[var(--text-secondary)] hover:text-[var(--bg-primary)] transition-colors text-lg"
                         >
                             Say Hello
+                        </button>
+                        <button 
+                            onClick={() => setView('product')}
+                            className="px-8 py-4 border-2 border-[var(--highlight)] text-[var(--text-primary)] font-bold rounded-full hover:bg-[var(--highlight)] hover:text-[var(--bg-primary)] transition-colors text-lg"
+                        >
+                            View Projects
                         </button>
                     </div>
                 </FadeIn>
@@ -560,6 +578,52 @@
                                 </div>
                                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                                 <p className="text-[var(--text-secondary)] flex-grow">{service.desc}</p>
+                            </div>
+                        </FadeIn>
+                    ))}
+                </div>
+            </div>
+        );
+
+        const Product = () => (
+            <div className="container mx-auto px-4 py-32 min-h-screen">
+                <FadeIn>
+                    <h2 className="text-4xl md:text-6xl font-bold mb-6 text-center">Our <span style={{color: 'var(--highlight)'}}>Product</span></h2>
+                </FadeIn>
+
+                <FadeIn delay={120}>
+                    <p className="text-center text-[var(--text-secondary)] text-lg max-w-2xl mx-auto mb-14">
+                        This is what we are building right now.
+                    </p>
+                </FadeIn>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    {PRODUCTS.map((product, idx) => (
+                        <FadeIn key={product.id} delay={idx * 120}>
+                            <div className="card h-full flex flex-col gap-5">
+                                <div className="flex items-center justify-between gap-4 flex-wrap">
+                                    <h3 className="text-3xl font-bold">{product.name}</h3>
+                                    <span className="px-4 py-1 rounded-full text-sm font-bold bg-[var(--accent)] text-[var(--text-primary)]">
+                                        {product.status}
+                                    </span>
+                                </div>
+                                <p className="text-[var(--text-secondary)]">{product.desc}</p>
+                                <div className="flex gap-3 flex-wrap">
+                                    {product.stack.map((item) => (
+                                        <span key={item} className="px-3 py-1 rounded-full border border-[var(--accent)] text-sm text-[var(--text-secondary)]">
+                                            {item}
+                                        </span>
+                                    ))}
+                                </div>
+                                <a
+                                    href={product.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="mt-2 inline-flex items-center gap-2 font-bold text-[var(--highlight)] hover:text-white transition-colors"
+                                >
+                                    <i className="fab fa-github"></i>
+                                    View project
+                                </a>
                             </div>
                         </FadeIn>
                     ))}
@@ -688,6 +752,7 @@
                         {view === 'home' && <Home setView={setView} />}
                         {view === 'team' && <Team />}
                         {view === 'services' && <Services />}
+                        {view === 'product' && <Product />}
                         {view === 'contact' && <Contact />}
                     </main>
 
