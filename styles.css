@@ -499,6 +499,50 @@ body[data-theme="dark"] .values-badge {
   padding: 2rem 6vw 3rem;
   color: var(--text-secondary);
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer-left p,
+.footer-left h5 {
+  margin: 0;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-link {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  color: var(--text-primary);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glow);
+}
+
+.footer-sep {
+  opacity: 0.5;
 }
 
 .scroll-progress {
@@ -600,6 +644,11 @@ body[data-theme="dark"] .values-badge {
   }
 
   .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer {
     flex-direction: column;
     align-items: flex-start;
   }
