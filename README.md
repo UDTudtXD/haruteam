@@ -12,3 +12,8 @@ neat and readable.
 
 ## Run locally
 Open `index.html` in a browser and you're set.
+
+
+
+### P.S.
+The location in the contact section wasn't real btw; it was merely a placeholder. Lol.
