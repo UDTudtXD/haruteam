@@ -7,8 +7,7 @@ neat and readable.
 
 ## What's inside
 - Hero section with a featured team card.
-- About, Members, Values, and Contact sections.
-- Scroll progress bar, reveal animations, and custom cursor styling.
+- About, Members, Project, and Contact sections.
 - Built with plain HTML, CSS, and JavaScript.
 
 ## Run locally
