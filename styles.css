@@ -121,7 +121,13 @@ main {
   color: var(--text-secondary);
 }
 
-.theme-toggle {
+.nav-actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.theme-toggle, .lang-toggle {
   border: 1px solid var(--panel-border);
   background: var(--panel-bg);
   color: var(--text-primary);
@@ -133,7 +139,7 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover, .lang-toggle:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
 }
