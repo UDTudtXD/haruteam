@@ -1,183 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haru Team | Probably Works</title>
-    <link
-        rel="icon"
-        type="image/svg+xml"
-        href="data:image/svg+xml,%3csvg%20xmlns%3d%27http%3a%2f%2fwww.w3.org%2f2000%2fsvg%27%20viewBox%3d%270%200%2064%2064%27%3e%3crect%20width%3d%2764%27%20height%3d%2764%27%20rx%3d%2714%27%20fill%3d%27%231E2022%27%2f%3e%3ccircle%20cx%3d%2732%27%20cy%3d%2732%27%20r%3d%279%27%20fill%3d%27%23f191b8%27%2f%3e%3cellipse%20cx%3d%2732%27%20cy%3d%2732%27%20rx%3d%2722%27%20ry%3d%2714%27%20fill%3d%27none%27%20stroke%3d%27%238FA6B5%27%20stroke-width%3d%273%27%2f%3e%3cellipse%20cx%3d%2732%27%20cy%3d%2732%27%20rx%3d%2714%27%20ry%3d%2722%27%20fill%3d%27none%27%20stroke%3d%27%23e062a0%27%20stroke-width%3d%272%27%20transform%3d%27rotate(18%2032%2032)%27%2f%3e%3ccircle%20cx%3d%2752%27%20cy%3d%2728%27%20r%3d%272.5%27%20fill%3d%27%23e062a0%27%2f%3e%3c%2fsvg%3e"
-    >
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body data-theme="light">
-    <div class="cursor-dot" aria-hidden="true"></div>
-    <div class="cursor-outline" aria-hidden="true"></div>
 
-    <div class="scroll-progress" aria-hidden="true"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haru Team | Probably Works</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3csvg%20xmlns%3d%27http%3a%2f%2fwww.w3.org%2f2000%2fsvg%27%20viewBox%3d%270%200%2064%2064%27%3e%3crect%20width%3d%2764%27%20height%3d%2764%27%20rx%3d%2714%27%20fill%3d%27%231E2022%27%2f%3e%3ccircle%20cx%3d%2732%27%20cy%3d%2732%27%20r%3d%279%27%20fill%3d%27%23f191b8%27%2f%3e%3cellipse%20cx%3d%2732%27%20cy%3d%2732%27%20rx%3d%2722%27%20ry%3d%2714%27%20fill%3d%27none%27%20stroke%3d%27%238FA6B5%27%20stroke-width%3d%273%27%2f%3e%3cellipse%20cx%3d%2732%27%20cy%3d%2732%27%20rx%3d%2714%27%20ry%3d%2722%27%20fill%3d%27none%27%20stroke%3d%27%23e062a0%27%20stroke-width%3d%272%27%20transform%3d%27rotate(18%2032%2032)%27%2f%3e%3ccircle%20cx%3d%2752%27%20cy%3d%2728%27%20r%3d%272.5%27%20fill%3d%27%23e062a0%27%2f%3e%3c%2fsvg%3e">
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <header class="site-header">
-      <nav class="nav">
-        <a class="logo" href="#top">Haru Team</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#members">Members</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
+<body data-theme="light">
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#top">Haru Team</a>
+      <div class="nav-links">
+        <a href="#about" data-th="เกี่ยวกับ">About</a>
+        <a href="#members" data-th="สมาชิก">Members</a>
+        <a href="#projects" data-th="โปรเจกต์">Projects</a>
+        <a href="#contact" data-th="ติดต่อ">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle" type="button" aria-pressed="false">
+          EN
+        </button>
         <button class="theme-toggle" type="button" aria-pressed="false">
           Light Mode
         </button>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">Introducing</p>
-          <h1>Haru Team</h1>
-          <p class="lead">
-          A small team of creators and developers building thoughtful 
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow" data-th="ขอแนะนำ">Introducing</p>
+        <h1 data-th="ทีม Haru">Haru Team</h1>
+        <p class="lead" data-th="ทีมเล็ก ๆ ของครีเอเตอร์และนักพัฒนาที่สร้างสรรค์ประสบการณ์ดิจิทัลอย่างตั้งใจ ผสมผสานความสงสัย ความคิดสร้างสรรค์ และความวุ่นวายเล็กน้อย เพื่อเปลี่ยนไอเดียให้กลายเป็นสิ่งที่ผู้คน <b>อาจจะ</b> สนุกกับการใช้งาน">
+          A small team of creators and developers building thoughtful
           digitalexperiences. We blend curiosity, creativity, and a little bit of chaos.
           to turn ideas into things people <b>MIGHT</b> enjoy using.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#members">Meet the Team</a>
-            <a class="button ghost" href="#projects">Our Projects</a>
-          </div>
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#members" data-th="พบกับทีมงาน">Meet the Team</a>
+          <a class="button ghost" href="#projects" data-th="โปรเจกต์ของเรา">Our Projects</a>
         </div>
-        <div class="hero-card">
-          <div class="orbital">
-            <span class="orb" aria-hidden="true"></span>
-            <span class="orb" aria-hidden="true"></span>
-            <span class="orb" aria-hidden="true"></span>
-          </div>
-          <div class="card-content">
-            <h2>Two Worlds, One Team</h2>
-            <p>
-              A mix of curious creators and practical builders working together
-              to explore ideas and bring them to life.
-            </p>
-            <h5><p class="team-note">
+      </div>
+      <div class="hero-card">
+        <div class="orbital">
+          <span class="orb" aria-hidden="true"></span>
+          <span class="orb" aria-hidden="true"></span>
+          <span class="orb" aria-hidden="true"></span>
+        </div>
+        <div class="card-content">
+          <h2 data-th="สองโลก, หนึ่งทีม">Two Worlds, One Team</h2>
+          <p data-th="การผสมผสานระหว่างครีเอเตอร์ที่อยากรู้อยากเห็นและผู้สร้างที่ลงมือทำจริง ทำงานร่วมกันเพื่อค้นหาไอเดียและทำให้มันมีชีวิตขึ้นมา">
+            A mix of curious creators and practical builders working together
+            to explore ideas and bring them to life.
+          </p>
+          <h5>
+            <p class="team-note" data-th="Felzeth ทำทุกอย่าง SNAPXON เป็นผู้ช่วย Panaz เป็นปรมาจารย์ด้านบางอย่าง....และ Satan… ก็คือ Satan">
               Felzeth does everything. SNAPXON assists. Panaz is the master at smth....And Satan… is Satan.
             </p>
-            </h5>
+          </h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="section-title">
+        <h2 data-th="เกี่ยวกับ Haru">About Haru</h2>
+        <p data-th="เราเป็นกลุ่มนักพัฒนาที่สร้างสิ่งที่ส่วนใหญ่ใช้งานได้ เมื่อมันใช้งานไม่ได้ เราเรียกมันว่าฟีเจอร์.">
+          We're a group of developers that's building things that mostly work. When they don't, we call it a feature.
+        </p>
+      </div>
+      <div class="grid three">
+        <article class="panel">
+          <h3 data-th="วิศวกรรมความวุ่นวาย">Chaos Engineering</h3>
+          <p data-th="เราข้ามขั้นตอนการทดสอบ โปรดักชันคือการทดสอบ">
+            We skip testing. Production is the test.
+          </p>
+        </article>
+        <article class="panel">
+          <h3 data-th="การทดสอบบนโปรดักชัน">Production Testing</h3>
+          <p data-th="Felzeth แก้บั๊กไปหนึ่ง แล้วเราก็สร้างบั๊กเพิ่มขึ้นอีก">
+            Felzeth fixed a bug, and we created more bugs.
+          </p>
+        </article>
+        <article class="panel">
+          <h3 data-th="วัฒนธรรมทีม">Team Culture</h3>
+          <p data-th="ทำงานให้เร็ว ทำของพัง โยนความผิดให้ Felzeth">
+            Move fast. Break things. Blame Felzeth.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="members" class="section reveal">
+      <div class="section-title">
+        <h2 data-th="สมาชิกทีม">Team Members</h2>
+        <p data-th="ขอบคุณ Felzeth ที่พัฒนาสิ่งนี้ <br> พวกเราส่วนใหญ่มาเพื่อขนมและบรรยากาศดี ๆ">
+          Thanks to Felzeth for developing this. <br>
+          Most of us are just here for the snacks and good vibes.
+        </p>
+      </div>
+      <div class="grid four">
+        <article class="member-card">
+          <div class="member-top">
+            <img class="member-avatar" src="https://avatars.githubusercontent.com/u/186721866?v=4"
+              alt="felzeth profile photo" />
+            <div class="member-info">
+              <h3>felzeth</h3>
+              <p data-th="ผู้ก่อตั้ง, นักพัฒนาหลัก">founder, lead developer</p>
+            </div>
           </div>
-        </div>
-      </section>
+          <div class="member-social">
+            <a class="icon-link" href="https://github.com/felzeth" target="_blank" rel="noopener noreferrer"
+              aria-label="felzeth GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.86 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.38-3.37-1.38-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.08 1.56 1.08.9 1.6 2.36 1.14 2.94.87.09-.67.35-1.14.63-1.4-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.06A9.2 9.2 0 0 1 12 7.7c.83 0 1.66.12 2.44.36 1.9-1.34 2.74-1.06 2.74-1.06.56 1.42.21 2.46.1 2.72.64.72 1.03 1.64 1.03 2.77 0 3.97-2.35 4.85-4.58 5.1.36.33.68.98.68 1.98 0 1.43-.01 2.59-.01 2.94 0 .27.18.6.69.49A10.1 10.1 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
+              </svg>
+            </a>
+            <a class="icon-link" href="https://x.com/UDTudtXD" target="_blank" rel="noopener noreferrer"
+              aria-label="felzeth Twitter">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M19.6 7.4c.01.14.01.28.01.42 0 4.28-3.26 9.22-9.22 9.22-1.83 0-3.53-.54-4.96-1.47.26.03.51.04.78.04 1.52 0 2.92-.52 4.03-1.4-1.42-.03-2.62-.96-3.03-2.25.2.03.4.05.62.05.29 0 .57-.04.84-.1-1.48-.31-2.6-1.6-2.6-3.17v-.04c.44.25.94.41 1.47.43-.87-.59-1.45-1.6-1.45-2.75 0-.6.16-1.17.44-1.66 1.6 2.02 4 3.36 6.7 3.5-.05-.24-.08-.49-.08-.75 0-1.8 1.43-3.25 3.2-3.25.92 0 1.76.39 2.35 1.03.73-.15 1.42-.41 2.04-.78-.24.77-.75 1.41-1.42 1.82.65-.08 1.27-.26 1.85-.52-.44.66-.98 1.25-1.6 1.72Z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="member-card">
+          <div class="member-top">
+            <img class="member-avatar" src="https://iili.io/qlzGzDN.jpg" alt="SNAPXON profile photo" />
+            <div class="member-info">
+              <h3>𝕊ℕ𝔸ℙ𝕏Øℕ</h3>
+              <p>Associated</p>
+            </div>
+          </div>
+          <div class="member-social">
+            <a class="icon-link" href="https://x.com/Terrenxels" target="_blank" rel="noopener noreferrer"
+              aria-label="SNAPXON Twitter">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M19.6 7.4c.01.14.01.28.01.42 0 4.28-3.26 9.22-9.22 9.22-1.83 0-3.53-.54-4.96-1.47.26.03.51.04.78.04 1.52 0 2.92-.52 4.03-1.4-1.42-.03-2.62-.96-3.03-2.25.2.03.4.05.62.05.29 0 .57-.04.84-.1-1.48-.31-2.6-1.6-2.6-3.17v-.04c.44.25.94.41 1.47.43-.87-.59-1.45-1.6-1.45-2.75 0-.6.16-1.17.44-1.66 1.6 2.02 4 3.36 6.7 3.5-.05-.24-.08-.49-.08-.75 0-1.8 1.43-3.25 3.2-3.25.92 0 1.76.39 2.35 1.03.73-.15 1.42-.41 2.04-.78-.24.77-.75 1.41-1.42 1.82.65-.08 1.27-.26 1.85-.52-.44.66-.98 1.25-1.6 1.72Z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="member-card">
+          <div class="member-top">
+            <img class="member-avatar" src="https://i.pinimg.com/736x/62/93/55/629355692929a33702635ea42cc871f2.jpg"
+              alt="Panaz profile photo" />
+            <div class="member-info">
+              <h3>Panaz</h3>
+              <p>Kale Master</p>
+            </div>
+          </div>
+        </article>
+        <article class="member-card">
+          <div class="member-top">
+            <img class="member-avatar" src="https://i.pinimg.com/736x/fd/68/c4/fd68c409363d69aa78154e572a22be96.jpg"
+              alt="Satan profile photo" />
+            <div class="member-info">
+              <h3>Satan</h3>
+              <p>Teehid</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <section id="about" class="section reveal">
-        <div class="section-title">
-          <h2>About Haru</h2>
-          <p>
-            We're a group of developers that's building things that mostly work. When they don't, we call it a feature.
-          </p>
-        </div>
-        <div class="grid three">
-          <article class="panel">
-            <h3>Chaos Engineering</h3>
-            <p>
-              We skip testing. Production is the test.
-            </p>
-          </article>
-          <article class="panel">
-            <h3>Production Testing</h3>
-            <p>
-              Felzeth fixed a bug, and we created more bugs.
-            </p>
-          </article>
-          <article class="panel">
-            <h3>Team Culture</h3>
-            <p>
-              Move fast. Break things. Blame Felzeth.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="members" class="section reveal">
-        <div class="section-title">
-          <h2>Team Members</h2>
-          <p>
-            Thanks to Felzeth for developing this. <br>
-            Most of us are just here for the snacks and good vibes.
-          </p>
-        </div>
-        <div class="grid four">
-          <article class="member-card">
-            <div class="member-top">
-              <img class="member-avatar" src="https://avatars.githubusercontent.com/u/186721866?v=4" alt="felzeth profile photo" />
-              <div class="member-info">
-                <h3>felzeth</h3>
-                <p>founder, lead developer</p>
-              </div>
-            </div>
-            <div class="member-social">
-              <a class="icon-link" href="https://github.com/felzeth" target="_blank" rel="noopener noreferrer" aria-label="felzeth GitHub">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.86 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.38-3.37-1.38-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.08 1.56 1.08.9 1.6 2.36 1.14 2.94.87.09-.67.35-1.14.63-1.4-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.06A9.2 9.2 0 0 1 12 7.7c.83 0 1.66.12 2.44.36 1.9-1.34 2.74-1.06 2.74-1.06.56 1.42.21 2.46.1 2.72.64.72 1.03 1.64 1.03 2.77 0 3.97-2.35 4.85-4.58 5.1.36.33.68.98.68 1.98 0 1.43-.01 2.59-.01 2.94 0 .27.18.6.69.49A10.1 10.1 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
-                </svg>
-              </a>
-              <a class="icon-link" href="https://x.com/UDTudtXD" target="_blank" rel="noopener noreferrer" aria-label="felzeth Twitter">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M19.6 7.4c.01.14.01.28.01.42 0 4.28-3.26 9.22-9.22 9.22-1.83 0-3.53-.54-4.96-1.47.26.03.51.04.78.04 1.52 0 2.92-.52 4.03-1.4-1.42-.03-2.62-.96-3.03-2.25.2.03.4.05.62.05.29 0 .57-.04.84-.1-1.48-.31-2.6-1.6-2.6-3.17v-.04c.44.25.94.41 1.47.43-.87-.59-1.45-1.6-1.45-2.75 0-.6.16-1.17.44-1.66 1.6 2.02 4 3.36 6.7 3.5-.05-.24-.08-.49-.08-.75 0-1.8 1.43-3.25 3.2-3.25.92 0 1.76.39 2.35 1.03.73-.15 1.42-.41 2.04-.78-.24.77-.75 1.41-1.42 1.82.65-.08 1.27-.26 1.85-.52-.44.66-.98 1.25-1.6 1.72Z"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-          <article class="member-card">
-            <div class="member-top">
-              <img class="member-avatar" src="https://iili.io/qlzGzDN.jpg" alt="SNAPXON profile photo" />
-              <div class="member-info">
-                <h3>𝕊ℕ𝔸ℙ𝕏Øℕ</h3>
-                <p>Associated</p>
-              </div>
-            </div>
-            <div class="member-social">
-              <a class="icon-link" href="https://x.com/Terrenxels" target="_blank" rel="noopener noreferrer" aria-label="SNAPXON Twitter">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M19.6 7.4c.01.14.01.28.01.42 0 4.28-3.26 9.22-9.22 9.22-1.83 0-3.53-.54-4.96-1.47.26.03.51.04.78.04 1.52 0 2.92-.52 4.03-1.4-1.42-.03-2.62-.96-3.03-2.25.2.03.4.05.62.05.29 0 .57-.04.84-.1-1.48-.31-2.6-1.6-2.6-3.17v-.04c.44.25.94.41 1.47.43-.87-.59-1.45-1.6-1.45-2.75 0-.6.16-1.17.44-1.66 1.6 2.02 4 3.36 6.7 3.5-.05-.24-.08-.49-.08-.75 0-1.8 1.43-3.25 3.2-3.25.92 0 1.76.39 2.35 1.03.73-.15 1.42-.41 2.04-.78-.24.77-.75 1.41-1.42 1.82.65-.08 1.27-.26 1.85-.52-.44.66-.98 1.25-1.6 1.72Z"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-          <article class="member-card">
-            <div class="member-top">
-              <img class="member-avatar" src="https://i.pinimg.com/736x/62/93/55/629355692929a33702635ea42cc871f2.jpg" alt="Panaz profile photo" />
-              <div class="member-info">
-                <h3>Panaz</h3>
-                <p>Kale Master</p>
-              </div>
-            </div>
-          </article>
-          <article class="member-card">
-            <div class="member-top">
-              <img class="member-avatar" src="https://i.pinimg.com/736x/fd/68/c4/fd68c409363d69aa78154e572a22be96.jpg" alt="Satan profile photo" />
-              <div class="member-info">
-                <h3>Satan</h3>
-                <p>Teehid</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="section reveal">
-        <div class="section-title">
-          <h2>Our Projects</h2>
-          <p>
-            This is what we are building inside Haru Team right now.
-          </p>
-        </div>
-        <div class="values-grid">
-          <article class="values-card">
-            <a href="https://github.com/Felzeth/haruindex" target="_blank" rel="noopener noreferrer">
+    <section id="projects" class="section reveal">
+      <div class="section-title">
+        <h2 data-th="โปรเจกต์ของเรา">Our Projects</h2>
+        <p data-th="นี่คือสิ่งที่เรากำลังสร้างอยู่ในทีม Haru ตอนนี้">
+          This is what we are building inside Haru Team right now.
+        </p>
+      </div>
+      <div class="values-grid">
+        <article class="values-card">
+          <a href="https://github.com/Felzeth/haruindex" target="_blank" rel="noopener noreferrer">
             <div class="values-head">
               <h3>Haru Index</h3>
-              <span class="values-badge">Active</span>
+              <span class="values-badge" data-th="เปิดใช้งานอยู่">Active</span>
             </div>
-            <p class="values-body">
+            <p class="values-body" data-th="ซอร์สโค้ดเบื้องหลังเว็บไซต์นี้">
               The source code behind this website.
             </p><br>
             <div class="values-tags">
@@ -187,64 +201,65 @@
             </div>
             <div class="values-meta">
               <span class="dot"></span>
-              <span>Running</span>
+              <span data-th="กำลังทำงาน">Running</span>
             </div>
-            </a>
-          </article>
-          <article class="values-card">
-            <div class="values-head">
-              <h3>Project Kura</h3>
-              <span class="values-badge">Under Development</span>
-            </div>
-            <p class="values-body">
-              Still under development, felzeth still traumatized by watching Fullmetal Alchemist. 
-              We will update you when it's ready.
-            </p>
-            <div class="values-tags">
-              <span class="tag">Exploration</span>
-              <span class="tag">Focus</span>
-              <span class="tag">Wonder</span>
-            </div>
-            <div class="values-meta">
-              <span class="dot"></span>
-              <span>Currently in orbit</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section reveal">
-        <div class="section-title">
-          <h2>Say Hello</h2>
-          <p>
-            Want to collaborate with us? Let’s talk about what we can
-            build together and how many snacks that will require.
+          </a>
+        </article>
+        <article class="values-card">
+          <div class="values-head">
+            <h3>Project Kura</h3>
+            <span class="values-badge" data-th="อยู่ระหว่างการพัฒนา">Under Development</span>
+          </div>
+          <p class="values-body" data-th="ยังอยู่ในระหว่างการพัฒนา felzeth ยังคงบอบช้ำจากการดู Fullmetal Alchemist เราจะอัปเดตให้คุณทราบเมื่อพร้อม.">
+            Still under development, felzeth still traumatized by watching Fullmetal Alchemist.
+            We will update you when it's ready.
           </p>
-        </div>
-        <div class="contact-card">
-          <p>Email: contact@haru.team</p>
-          <p>Based in Tokyo, Japan</p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-left">
-        <p>Haru Team | A small team on the internet.</p>
-        <h5>Felzeth are dying.</h5>
+          <div class="values-tags">
+            <span class="tag" data-th="การสำรวจ">Exploration</span>
+            <span class="tag" data-th="การโฟกัส">Focus</span>
+            <span class="tag" data-th="ความมหัศจรรย์">Wonder</span>
+          </div>
+          <div class="values-meta">
+            <span class="dot"></span>
+            <span data-th="กำลังอยู่ในวงโคจร">Currently in orbit</span>
+          </div>
+        </article>
       </div>
-      <div class="footer-right">
-        <h5>powered by</h5>
-        <a class="footer-link" href="https://github.com/Felzeth/haruindex" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
-        <span class="footer-sep">•</span>
-        <a class="footer-link" href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
-          Vercel
-        </a>
-      </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section id="contact" class="section reveal">
+      <div class="section-title">
+        <h2 data-th="ทักทาย">Say Hello</h2>
+        <p data-th="อยากร่วมงานกับเราไหม? มาคุยกันว่าเรามาสร้างอะไรด้วยกันได้บ้าง และต้องใช้ขนมกี่ชิ้น">
+          Want to collaborate with us? Let’s talk about what we can
+          build together and how many snacks that will require.
+        </p>
+      </div>
+      <div class="contact-card">
+        <p data-th="อีเมล: contact@haru.team">Email: contact@haru.team</p>
+        <p data-th="ตั้งอยู่ในโตเกียว ประเทศญี่ปุ่น">Based in Tokyo, Japan</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <p data-th="ทีม Haru | ทีมเล็ก ๆ บนอินเทอร์เน็ต">Haru Team | A small team on the internet.</p>
+      <h5 data-th="Felzeth กำลังจะตาย.">Felzeth are dying.</h5>
+    </div>
+    <div class="footer-right">
+      <h5 data-th="สนับสนุนโดย">powered by</h5>
+      <a class="footer-link" href="https://github.com/Felzeth/haruindex" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+      <span class="footer-sep">•</span>
+      <a class="footer-link" href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
+        Vercel
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
