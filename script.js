@@ -1,5 +1,6 @@
 const body = document.body;
 const toggleButton = document.querySelector(".theme-toggle");
+const langToggleButton = document.querySelector(".lang-toggle");
 const cursorDot = document.querySelector(".cursor-dot");
 const cursorOutline = document.querySelector(".cursor-outline");
 const revealElements = document.querySelectorAll(".reveal");
@@ -7,28 +8,61 @@ const scrollProgress = document.querySelector(".scroll-progress");
 
 const themes = {
   light: {
-    label: "Light Mode",
+    label: { en: "Light Mode", th: "โหมดสว่าง" },
     next: "dark",
   },
   dark: {
-    label: "Dark Mode",
+    label: { en: "Dark Mode", th: "โหมดมืด" },
     next: "light",
   },
 };
 
+let currentLang = localStorage.getItem("haru-lang") || "en";
+
+function applyLanguage(lang) {
+  document.querySelectorAll("[data-th]").forEach(el => {
+    if (!el.hasAttribute("data-en")) {
+      el.setAttribute("data-en", el.innerHTML);
+    }
+    el.innerHTML = el.getAttribute(`data-${lang}`);
+  });
+  if (langToggleButton) {
+    langToggleButton.textContent = lang === "th" ? "TH" : "EN";
+  }
+  document.documentElement.lang = lang;
+  
+  const currentTheme = body.dataset.theme || "light";
+  if (toggleButton) {
+    toggleButton.textContent = themes[currentTheme].label[lang];
+  }
+}
+
+applyLanguage(currentLang);
+
+if (langToggleButton) {
+  langToggleButton.addEventListener("click", () => {
+    currentLang = currentLang === "en" ? "th" : "en";
+    localStorage.setItem("haru-lang", currentLang);
+    applyLanguage(currentLang);
+  });
+}
+
 const savedTheme = localStorage.getItem("haru-theme");
 if (savedTheme) {
   body.dataset.theme = savedTheme;
-  toggleButton.textContent = themes[savedTheme].label;
+  toggleButton.textContent = themes[savedTheme].label[currentLang];
   toggleButton.setAttribute("aria-pressed", savedTheme === "dark");
+} else {
+  toggleButton.textContent = themes.light.label[currentLang];
 }
 
 toggleButton.addEventListener("click", () => {
   const currentTheme = body.dataset.theme || "light";
   const nextTheme = themes[currentTheme].next;
   body.dataset.theme = nextTheme;
-  toggleButton.textContent = themes[nextTheme].label;
+  toggleButton.textContent = themes[nextTheme].label[currentLang];
   toggleButton.setAttribute("aria-pressed", nextTheme === "dark");
+  localStorage.setItem("haru-lang", currentLang); // preserve just in case but theme is next... wait I need haru-theme
   localStorage.setItem("haru-theme", nextTheme);
 });
 
