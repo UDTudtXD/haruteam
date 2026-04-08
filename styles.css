@@ -491,12 +491,12 @@ body[data-theme="dark"] .values-badge {
 }
 
 .rekke-name {
-  background: linear-gradient(135deg, #a855f7, #d946ef);
+  background: linear-gradient(135deg, #facc15 20%, #3b82f6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 4px 15px rgba(217, 70, 239, 0.4);
+  text-shadow: 0 4px 15px rgba(59, 130, 246, 0.5);
 }
 
 .rekke-title {
