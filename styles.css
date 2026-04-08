@@ -127,7 +127,8 @@ main {
   align-items: center;
 }
 
-.theme-toggle, .lang-toggle {
+.theme-toggle,
+.lang-toggle {
   border: 1px solid var(--panel-border);
   background: var(--panel-bg);
   color: var(--text-primary);
@@ -139,7 +140,8 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.theme-toggle:hover, .lang-toggle:hover {
+.theme-toggle:hover,
+.lang-toggle:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
 }
@@ -467,6 +469,54 @@ body[data-theme="dark"] .values-badge {
   color: var(--text-secondary);
 }
 
+.felzeth-name {
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.6), 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.felzeth-title {
+  background: linear-gradient(90deg, aqua, lightgrey, aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  background-size: 200% auto;
+  animation: shine 4s linear infinite;
+  display: inline-block;
+}
+
+.rekke-name {
+  background: linear-gradient(135deg, #a855f7, #d946ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 15px rgba(217, 70, 239, 0.4);
+}
+
+.rekke-title {
+  background: linear-gradient(90deg, #28a745, #ffc107, #28a745);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  background-size: 200% auto;
+  animation: shine 4s linear infinite;
+  display: inline-block;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
 .member-social {
   display: flex;
   gap: 0.6rem;
@@ -612,6 +662,7 @@ body[data-theme="dark"] .values-badge {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -621,9 +672,11 @@ body[data-theme="dark"] .values-badge {
   0% {
     transform: translateX(-100%);
   }
+
   50% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(100%);
   }
