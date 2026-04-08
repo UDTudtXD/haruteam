@@ -719,3 +719,16 @@ body[data-theme="dark"] .values-badge {
     transition: none !important;
   }
 }
+
+/* Language Transition */
+.site-header, main, .site-footer {
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+body.lang-transitioning .site-header,
+body.lang-transitioning main,
+body.lang-transitioning .site-footer {
+  opacity: 0;
+  filter: blur(4px);
+  pointer-events: none;
+}

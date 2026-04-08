@@ -43,7 +43,13 @@ if (langToggleButton) {
   langToggleButton.addEventListener("click", () => {
     currentLang = currentLang === "en" ? "th" : "en";
     localStorage.setItem("haru-lang", currentLang);
-    applyLanguage(currentLang);
+    
+    document.body.classList.add("lang-transitioning");
+    
+    setTimeout(() => {
+      applyLanguage(currentLang);
+      document.body.classList.remove("lang-transitioning");
+    }, 250);
   });
 }
 
