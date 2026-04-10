@@ -499,6 +499,18 @@ body[data-theme="light"] .felzeth-name {
   display: inline-block;
 }
 
+body[data-theme="light"] .felzeth-title {
+  background: linear-gradient(90deg, #d1467a, #8b4e7c, #d1467a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  background-size: 200% auto;
+  animation: shine 4s linear infinite;
+  display: inline-block;
+}
+
 .rekke-name {
   background: linear-gradient(135deg, #facc15 20%, #3b82f6 100%);
   -webkit-background-clip: text;
