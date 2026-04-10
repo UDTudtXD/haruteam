@@ -478,6 +478,15 @@ body[data-theme="dark"] .values-badge {
   text-shadow: 0 0 12px rgba(255, 255, 255, 0.6), 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
+body[data-theme="light"] .felzeth-name {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
+  color: #1b112a;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.18), 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
 .felzeth-title {
   background: linear-gradient(90deg, aqua, lightgrey, aqua);
   -webkit-background-clip: text;
