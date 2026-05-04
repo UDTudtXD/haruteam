@@ -532,6 +532,16 @@ body[data-theme="light"] .felzeth-title {
   display: inline-block;
 }
 
+.hxk-name {
+  color: #00e5ff;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+body[data-theme="light"] .hxk-name {
+  color: #008eb3;
+  text-shadow: 0 0 10px rgba(0, 142, 179, 0.3);
+}
+
 @keyframes shine {
   to {
     background-position: 200% center;
